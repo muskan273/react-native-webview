@@ -165,6 +165,22 @@ class WebView extends React.Component<AndroidWebViewProps, State> {
     );
   };
 
+  enableAndroidRefresh = () => {
+    UIManager.dispatchViewManagerCommand(
+       this.getWebViewHandle(),
+       this.getCommands().enableAndroidRefresh,
+        undefined,
+    );
+  };
+
+  disableAndroidRefresh = () => {
+    UIManager.dispatchViewManagerCommand(
+       this.getWebViewHandle(),
+       this.getCommands().disableAndroidRefresh,
+        undefined,
+    );
+  };
+
   /**
    * Injects a javascript string into the referenced WebView. Deliberately does not
    * return a response because using eval() to return a response breaks this method

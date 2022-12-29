@@ -14,7 +14,7 @@ import {
 
 type WebViewCommands = 'goForward' | 'goBack' | 'reload' | 'stopLoading' | 'postMessage' | 'injectJavaScript' | 'loadUrl' | 'requestFocus';
 
-type AndroidWebViewCommands = 'clearHistory' | 'clearCache' | 'clearFormData';
+type AndroidWebViewCommands = 'clearHistory' | 'clearCache' | 'clearFormData' | 'enableAndroidRefresh' | 'disableAndroidRefresh';
 
 
 
