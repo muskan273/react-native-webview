@@ -275,9 +275,9 @@ public class RNCWebViewManager extends SimpleViewManager<LinearLayout> {
 
         module.setDownloadRequest(request);
 
-        if (module.grantFileDownloaderPermissions(getDownloadingMessage(), getLackPermissionToDownloadMessage())) {
-          module.downloadFile(getDownloadingMessage());
-        }
+        // if (module.grantFileDownloaderPermissions(getDownloadingMessage(), getLackPermissionToDownloadMessage())) {
+        //   module.downloadFile(getDownloadingMessage());
+        // }
       }
     });
     swipeRefreshLayout.setOnRefreshListener(() -> {
